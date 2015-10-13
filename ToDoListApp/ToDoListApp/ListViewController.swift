@@ -32,10 +32,6 @@ class ListViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
-    func addLine(s: String) {
-        dataList.append(Data(s: s))
-    }
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataList.count
     }
